@@ -1,3 +1,9 @@
+# Nama : Muhamad Alfikri Syahputra
+# Nim : 6706220017
+# Prodi : D3 Rekayasa Perangkat Lunak Aplikasi
+# Kampus : Telkom Unviersity
+
+
 # app-pokemon
 
 ## Project setup
