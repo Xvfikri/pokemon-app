@@ -1,15 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="logo" src="./assets/pokemonlogo.png" class="logo">
+  <SearchView />
+  <Suspense>
+    <template #default>
+      <PokemonsView />
+    </template>
+    <template #fallback>
+      <LoadingView />
+    </template>
+  </Suspense>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LoadingView from './components/LoadingView.vue';
+import PokemonsView from './components/PokemonsView.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PokemonsView,
+    LoadingView,
   }
 }
 </script>
@@ -22,5 +32,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.logo{
+  height: 200px;
 }
 </style>

@@ -1,0 +1,13 @@
+.pokemon-edit {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  form div {
+    margin-bottom: 10px;
+  }
+  label {
+    display: inline-block;
+    width: 100px;
+  }
